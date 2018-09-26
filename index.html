@@ -3,10 +3,80 @@
   <head>
     <meta charset="utf-8">
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-    <link rel="stylesheet" href="style.css">
     <title>James H Cate Webume</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu+Mono" rel="stylesheet">
   </head>
   <body>
-    <div class="middle">
+    <div class="a">
+      <img src="./images/profile.jpeg">
+      <button>Resume</button>
+      <h1>James H. Cate</h1>
+      <h2>Quite Curious</h2>
+      <h3>Take it easy, but take it!</h3>
+    </div>
+    <div id="middle" class="middle">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, '1')">Home</button>
+        <button class="tablinks" number="2" onclick="openTab(event, '2')">Education</button>
+        <button class="tablinks" number="3" onclick="openTab(event, '3')">Projects</button>
+        <button class="tablinks" number="4" onclick="openTab(event, '4')">Professional</button>
+        <button class="tablinks" number="5" onclick="openTab(event, '5')">Personal</button>
+        <button class="tablinks" number="6" onclick="openTab(event, '6')">More</button>
+      </div>
+
+      <div id="1" class="tabcontent">
+        <h3>Home</h3>
+        <p>This is the default tab</p>
+      </div>
+
+      <div id="2" class="tabcontent">
+        <h3>Education</h3>
+        <p>Information about education</p>
+      </div>
+
+      <div id="3" class="tabcontent">
+        <h3>Projects</h3>
+        <p>Projects done that relate to professional interests</p>
+      </div>
+
+      <div id="4" class="tabcontent">
+        <h3>Professional</h3>
+        <p>Things I get paid to do</p>
+      </div>
+
+      <div id="5" class="tabcontent">
+        <h3>Personal</h3>
+        <p>Things happening in my life</p>
+      </div>
+
+      <div id="6" class="tabcontent">
+        <h3>More</h3>
+        <p>People and things that I like enough to share</p>
+      </div>
+
+    </div>
+
+<script>
+function openTab(evt, key) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(key).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+  </body>
 </html>
