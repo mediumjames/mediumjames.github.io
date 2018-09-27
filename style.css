@@ -121,7 +121,7 @@ div.a > h1 {
 div.a > h2 {
   font-size: 1.5rem;
   font-family: 'Ubuntu', sans-serif;
-  color: rgba(255,255,225,1);
+  color: rgba(255,255,255,1);
   padding-left: 130px;
   padding-top: 6px;
 }
@@ -166,6 +166,7 @@ div.a > button {
 div.a > a > img {
   float: right;
   width: 40px;
+  margin-left: 10px;
 }
 
 /* Fade */
