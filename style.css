@@ -23,7 +23,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 
 .tab {
   width: auto;
-  height: 23px;
+  height: 28px;
   overflow: hidden;
   background-color: rgba(26, 33, 39, 1);
 }
@@ -33,6 +33,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
     height: inherit;
     width: 15%;
     float: left;
+    margin-top: 5px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -223,71 +224,6 @@ div.a > a > img {
   transform: scale(1.1);
 }
 
-/* Hang */
-@-webkit-keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-  50% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-  100% {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-}
-@keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-  50% {
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-  }
-  100% {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-}
-@-webkit-keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-}
-@keyframes hvr-hang-sink {
-  100% {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-}
-.hvr-hang {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-  -webkit-animation-name: hvr-hang-sink, hvr-hang;
-  animation-name: hvr-hang-sink, hvr-hang;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
 /* Rotate */
 .hvr-rotate {
   display: inline-block;
@@ -303,4 +239,69 @@ div.a > a > img {
 .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
   -webkit-transform: rotate(10deg);
   transform: rotate(10deg);
+}
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
