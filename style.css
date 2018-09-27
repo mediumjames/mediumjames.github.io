@@ -164,9 +164,11 @@ div.a > button {
 }
 
 div.a > a > img {
-  float: right;
+  position:relative;
+  float:right;
+  top: -40px;
   width: 40px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 /* Fade */
