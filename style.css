@@ -11,7 +11,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 
 .middle{
   width: auto;
-  height: 500px;
+  height: 100%;
   background: rgba(9,12,15,1);
   text-align: left;
   margin-left: 15%;
@@ -134,6 +134,14 @@ div.a > h3 {
   padding-top: 3px;
 }
 
+div.a > h4 {
+  font-size: 1rem;
+  font-family: 'Ubuntu Mono', monospace;
+  color: rgba(6,8,10,1);
+  float: right;
+  padding-top: 13px
+}
+
 div.a > img {
   width: 115px;
   border-radius: 50%;
@@ -148,9 +156,16 @@ div.a > button {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 18px;
   float: right;
-  margin-top: 5px;
+  margin-top: 16px;
   font-family: 'Ubuntu', sans-serif;
   color: rgba(6,8,10,1);
+}
+
+div.a > a > img {
+  float: right;
+  margin-top: 85px;
+  width: 35px;
+  padding-left: 8px;
 }
