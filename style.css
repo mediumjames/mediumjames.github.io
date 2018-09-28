@@ -28,27 +28,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   background-color: rgba(26, 33, 39, 1);
 }
 
-.tab button {
-    background-color: rgba(68, 83, 96, 1);
-    height: inherit;
-    width: 15%;
-    float: left;
-    margin-top: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
-    color: rgba(6,8,10,1);
-}
-
-.tab button:hover {
-  background-color: rgba(68, 83, 96, 1);
-}
-.tab button.active {
-  background-color: rgba(68, 83, 96, 1);
-}
-
 .tab > button[number='4'] {
   background-color: rgba(115,134,120,1);
 }
@@ -97,6 +76,20 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 .tab > button[number='5'].active {
   background-color: rgba(223,188,255,1);
+}
+
+.tablink {
+  background-color: rgba(68, 83, 96, 1);
+  height: inherit;
+  width: 15%;
+  float: left;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(6,8,10,1);
 }
 
 .tabcontent {
@@ -241,67 +234,19 @@ div.a > a > img {
   transform: rotate(10deg);
 }
 
-/* Bob */
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-  50% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-  50% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-.hvr-bob {
+/* Lift */
+.hvr-lift {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
+.hvr-lift:hover, .hvr-lift:focus, .hvr-lift:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
