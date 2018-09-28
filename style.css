@@ -87,7 +87,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
   color: rgba(6,8,10,1);
 }
@@ -155,6 +155,10 @@ div.a > button {
   float: right;
   font-family: 'Ubuntu', sans-serif;
   color: rgba(6,8,10,1);
+}
+
+div.a > button:active {
+  background-color: rgba(135,121,21);
 }
 
 div.a > a > img {
