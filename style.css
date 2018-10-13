@@ -9,7 +9,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   font-size-adjust: 0.5;
 }
 
-.middle{
+.middle {
   width: auto;
   height: 250px;
   background: rgba(9,12,15,1);
@@ -17,7 +17,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 5%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: rgba(225,225,225,1);
 }
 
@@ -93,8 +93,66 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 .tabcontent {
+  width: inherit;
   display: none;
-  padding: 6px 12px;
+  padding: 5px;
+}
+
+.tabcontent ul {
+  list-style-type: none;
+  width: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.tabcontent a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tabcontent li img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0 15px 0 0;
+  padding: 4px 4px 4px 4px;
+}
+
+.tabcontent li h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.tabcontent li h4 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: .35rem;
+  margin-right: 15px;
+  float: right;
+}
+
+.tabcontent li p {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: .5rem;
+  margin-top: 6px;
+}
+
+.tabcontent li {
+  overflow: auto;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.tabcontent li:hover {
+  background-color: #3A4853;
 }
 
 div.a {
@@ -133,7 +191,7 @@ div.a > h4 {
   font-family: 'Ubuntu Mono', monospace;
   color: rgba(6,8,10,1);
   float: right;
-  padding-top: 13px
+  padding-top: 5px
 }
 
 div.a > img {
@@ -143,10 +201,10 @@ div.a > img {
 }
 
 div.a > button {
-  background-color: rgba(255,228,40);
+  background-color: rgba(255,228, 1);
   width: 15%;
   height: 35px;
-  border-radius: 4px;
+  border-radius: 3px;
   border: none;
   outline: none;
   cursor: pointer;
