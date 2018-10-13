@@ -2,13 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- Load JQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+
     <title>James H Cate Webume</title>
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu+Mono" rel="stylesheet">
   </head>
+
   <body>
     <div class="a">
       <img src="./images/profile.jpeg" class="hvr-rotate">
@@ -17,17 +22,14 @@
       <h2>Quite Curious</h2>
       <h3>Take it easy, but take it!</h3>
       <br style="clear:both"/>
-      <a href="https://lichess.org/@/lil_kitsch" target="_blank">
-        <img src="./images/lichess.png" class="hvr-shrink">
-      </a>
-      <a href="https://open.spotify.com/user/12179092595?si=xzNRylpTSaCSYm9yNs9n9A" target="_blank">
-        <img src="./images/spotify.png" class="hvr-shrink">
-      </a>
       <a href="https://github.com/mediumjames" target="_blank">
-        <img src="./images/git.png" class="hvr-shrink">
+        <img src="./images/git.svg" class="hvr-shrink">
       </a>
       <a href="https://www.linkedin.com/mediumjames" target="_blank">
-        <img src="./images/in.png" class="hvr-shrink">
+        <img src="./images/linkedin.svg" class="hvr-shrink">
+      </a>
+      <a href="mailto:JamesCate@mediumjames.com" target="_blank">
+        <img src="./images/mail.svg" class="hvr-shrink">
       </a>
     </div>
     <div class="middle">
@@ -41,33 +43,44 @@
       </div>
 
       <div id="1" class="tabcontent">
-        <h3>Home</h3>
-        <p>This is the default tab</p>
+        <ul>
+          <a href="https://github.com/mediumjames" target="_blank">
+            <li>
+              <img src="./images/profile.jpeg" class="hvr-rotate">
+              <h3>Content Test</h3>
+              <p>This is the default tab.  This is a test for how a paragraph of Content
+              might look when displayed on this page.
+
+            Here is what hard eneters look like and such. 123456789!@#$%^&*()</p>
+              <h4>Date/D/te</h4>
+            </li>
+          </a>
+        </ul>
       </div>
 
       <div id="2" class="tabcontent">
-        <h3>Education</h3>
-        <p>Information about education</p>
+        <h1>Education</h1>
+        <h2>Information about education<h2>
       </div>
 
       <div id="3" class="tabcontent">
-        <h3>Projects</h3>
-        <p>Projects done that relate to professional interests</p>
+        <h1>Projects</h1>
+        <h2>Projects done that relate to professional interests<h2>
       </div>
 
       <div id="4" class="tabcontent">
-        <h3>Professional</h3>
-        <p>Things I get paid to do</p>
+        <h1>Professional</h1>
+        <h2>Things I get paid to do<h2>
       </div>
 
       <div id="5" class="tabcontent">
-        <h3>Personal</h3>
-        <p>Things happening in my life</p>
+        <h1>Personal</h1>
+        <h2>Things happening in my life<h2>
       </div>
 
       <div id="6" class="tabcontent">
-        <h3>More</h3>
-        <p>People and things that I like enough to share</p>
+        <h1>More</h1>
+        <h2>People and things that I like enough to share<h2>
       </div>
 
     </div>
@@ -90,7 +103,6 @@ function openTab(evt, key) {
     document.getElementById(key).style.display = "block";
     evt.currentTarget.className += " active";
 }
-</script>
-
+  </script>
   </body>
 </html>
