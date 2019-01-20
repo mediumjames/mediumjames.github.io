@@ -7,51 +7,69 @@
     <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
 
     <title>James H Cate Webume</title>
+    <link rel="icon" href="./images/Picture1.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu+Mono" rel="stylesheet">
   </head>
 
   <body>
-    <div class="a">
+    <div class="header">
       <img src="./images/profile.jpeg" class="hvr-rotate">
-      <button class="hvr-grow">Resume</button>
+      <button type="submit" onclick="window.open('./James Cate Resume 2019.pdf')" class="btn btn-resume hvr-radial-in">
+        <span class="glyphicon glyphicon-file"></span>
+        Resume
+      </button>  
       <h1>James H. Cate</h1>
+      <p>1.19.19</p>
       <h2>Quite Curious</h2>
       <h3>Take it easy, but take it!</h3>
+
       <br style="clear:both"/>
       <a href="https://github.com/mediumjames" target="_blank">
-        <img src="./images/git.svg" class="hvr-shrink">
+        <img src="./images/git.svg" class="hvr-grow">
       </a>
-      <a href="https://www.linkedin.com/mediumjames" target="_blank">
-        <img src="./images/linkedin.svg" class="hvr-shrink">
+      <a href="https://www.linkedin.com/in/mediumjames/" target="_blank">
+        <img src="./images/linkedin.svg" class="hvr-grow">
       </a>
       <a href="mailto:JamesCate@mediumjames.com" target="_blank">
-        <img src="./images/mail.svg" class="hvr-shrink">
+        <img src="./images/mail.svg" class="hvr-grow">
       </a>
     </div>
-    <div class="middle">
+    <div class="main">
       <div class="tab">
         <button class="tablink hvr-lift" onclick="openTab(event, '1')" id="defaultOpen">Home</button>
         <button class="tablink hvr-lift" number="2" onclick="openTab(event, '2')">Education</button>
         <button class="tablink hvr-lift" number="3" onclick="openTab(event, '3')">Projects</button>
         <button class="tablink hvr-lift" number="4" onclick="openTab(event, '4')">Professional</button>
         <button class="tablink hvr-lift" number="5" onclick="openTab(event, '5')">Personal</button>
-        <button class="tablink hvr-lift" number="6" onclick="openTab(event, '6')">More</button>
       </div>
 
       <div id="1" class="tabcontent">
+        <div class="stripe1"></div>
         <ul>
           <a href="https://github.com/mediumjames" target="_blank">
-            <li>
+            <li class="hvr-underline-from-left1">
               <img src="./images/profile.jpeg" class="hvr-rotate">
-              <h3>Content Test</h3>
-              <p>This is the default tab.  This is a test for how a paragraph of Content
-              might look when displayed on this page.
-
-            Here is what hard eneters look like and such. 123456789!@#$%^&*()</p>
+              <h3>Welcome!</h3>
+              <p>
+                Thanks for coming to my site.  This is a place for me to collect some of
+                the things I do and you to check them out.  It's called it a webume!  Please, let me know what you think of
+                the site and how you found it.  My contact info is in the top right.
+              </p>
               <h4>Date/D/te</h4>
             </li>
           </a>
@@ -59,50 +77,133 @@
       </div>
 
       <div id="2" class="tabcontent">
-        <h1>Education</h1>
-        <h2>Information about education<h2>
+        <div class="stripe2"></div>
+        <ul>
+          <a href="https://www.utk.edu" target="_blank">
+            <li class="hvr-underline-from-left2">
+              <img src="./images/power_t.jpg">
+              <h3>University of Tennessee at Knoxville</h3>
+              <p>
+                Graduated with chancellor's honors and engineering honors.
+                Majored in computer science.
+                Double Minored in cybersecurity and business administration.
+                Concentrated on artificial intelligence.
+              </p>
+              <h4>12.14.2018</h4>
+            </li>
+          </a>
+          <a href="https://www.tbp.org/home.cfm" target="_blank">
+            <li class="hvr-underline-from-left2">
+              <img src="./images/tbp.gif">
+              <h3>Tau Beta Pi</h3>
+              <p>
+                I was truly honored to be initiated into the engineering honors society, Tau Beta Pi - Tennessee Alpha.
+                They were my target honors society.  Thankfully, I was able to be a member of the second class of computer
+                scientists ever initiated by Tennessee Alpha.
+              </p>
+              <h4>11.15.2018</h4>
+            </li>
+          </a>
+          <a href="http://web.utk.edu/~xzhao9/" target="_blank">
+            <li class="hvr-underline-from-left2">
+              <img src="./images/research.png">
+              <h3>Nonlinear Biodynamics Lab</h3>
+              <p>
+                Here I had the privilege of doing research on numerous brain computer interfaces.  This was a
+                multicultural environment which provided a learning experience that touched mechanical engineering,
+                electrical engineering, computer science, neuroscience, psychology, and public speaking.
+              </p>
+              <h4>8.20.2017</h4>
+            </li>
+          </a>
+        </ul>
       </div>
 
       <div id="3" class="tabcontent">
-        <h1>Projects</h1>
-        <h2>Projects done that relate to professional interests<h2>
+        <div class="stripe3"></div>
+        <ul>
+           <a href="https://github.com/mediumjames" target="_blank">
+            <li class="hvr-underline-from-left3">
+              <img src="./images/profile.jpeg" class="hvr-rotate">
+              <h3>Placeholder</h3>
+              <p>
+                Sorry, I'm still migrating content. For now here is a short story.  Inky, binky, bonky.
+                Daddy had a donkey.  Donkey died. Daddy cried. Inky, binky.... bonky.
+              </p>
+              <h4>Date/D/te</h4>
+            </li>
+          </a>
+        </ul>
       </div>
 
       <div id="4" class="tabcontent">
-        <h1>Professional</h1>
-        <h2>Things I get paid to do<h2>
+        <div class="stripe4"></div>
+        <ul>
+          <a href="https://www.claytonhomes.com" target="_blank">
+            <li class="hvr-underline-from-left4">
+              <img src="./images/cmh.jpg" class="hvr-rotate">
+              <h3>Clayton Homes Cloud Engineer</h3>
+              <p>
+                  Assisted in the creation and fulfillment of security and infrastructure standards.
+                  Created and prepared numerous accounts for use in a complex system. 
+                  Aided in architecting base account structure, permissions, networking, and tool-chain 
+                  integration such as deployment and source control. Authored resource templates, 
+                  scripts for mass deployment and system scanning, and numerous confluence documentation 
+                  pages for various audiences including managers, engineers, developers, and trainees.
+                  Active member of the cloud center for excellence.
+              </p>
+              <h4>8.13.2018</h4>
+            </li>
+          </a>
+        </ul>
       </div>
 
       <div id="5" class="tabcontent">
-        <h1>Personal</h1>
-        <h2>Things happening in my life<h2>
-      </div>
-
-      <div id="6" class="tabcontent">
-        <h1>More</h1>
-        <h2>People and things that I like enough to share<h2>
+        <div class="stripe5"></div>
+        <ul>
+          <a href="https://github.com/mediumjames" target="_blank">
+            <li class="hvr-underline-from-left5">
+              <img src="./images/profile.jpeg" class="hvr-rotate">
+              <h3>Placeholder</h3>
+              <p>
+                Sorry, I'm still migrating content. For now here is a short story.  Inky, binky, bonky.
+                Daddy had a donkey.  Donkey died. Daddy cried. Inky, binky.... bonky.
+              </p>
+              <h4>Date/D/te</h4>
+            </li>
+          </a>
+        </ul>
       </div>
 
     </div>
 
-<script>
-document.getElementById("defaultOpen").click();
-function openTab(evt, key) {
-    var i, tabcontent, tablinks;
+    <script>
+      document.getElementById("defaultOpen").click();
+      function openTab(evt, key) {
+          var i, tabcontent, tablinks;
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
 
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
 
-    document.getElementById(key).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-  </script>
+          document.getElementById(key).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+    </script>
+
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
